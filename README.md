@@ -25,7 +25,13 @@ This notebook covers the advanced contributions of the paper regarding complex t
 
 We validated the algorithm on large, randomized complex graphs containing both simple bubbles and complex bridges.
 
-* ⚡ **Efficiency:** In a representative example containing dense structural variation, the algorithm produced a diploid graph with an expansion factor of approximately **1.6x** relative to the haploid input size. This **linear scaling** is significantly more efficient than standard theoretical approaches, **avoiding** both the quadratic growth ($O(N^2)$) of a Cartesian product and the combinatorial explosion ($\binom{n}{2}$) of naive haplotype path pairing.
+* ⚡ **Efficiency:** The diploid graph construction demonstrated linear scalability across all topologies.
+
+  * On complex graphs mixing linear backbone, bubbles, and bridges, we observed an expansion factor of **~1.6x**.
+
+  * On graphs consisting entirely of nested structural variations (pure SP "bubbles"), the expansion factor approached **~1.9x**.
+
+    * **Comparison:** This linear scaling drastically outperforms standard theoretical models, **avoiding** both the quadratic growth ($O(N^2)$) of Cartesian products and the combinatorial explosion ($\binom{n}{2}$) of naive haplotype path pairing.
 
 * ✅ **Accuracy:** The node and edge counts of the resulting graphs **matched theoretical topological predictions** derived from the SPQRW decomposition, verifying that the algorithm identifies disjoint paths **without introducing redundancy**.
 

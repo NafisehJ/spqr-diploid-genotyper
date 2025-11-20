@@ -7,13 +7,13 @@
 
 This repository contains the reference implementation using **SageMath** and **Jupyter notebooks** reproducing the validation experiments described in the paper.
 
-### 1. [01_SP_Bubble_Validation.ipynb](01_SP_Bubble_Validation.ipynb)
+### 1. [01_SP_Bubble_Validation.ipynb]
 **Validation on Series-Parallel (SP) Graphs.**
 This notebook demonstrates the core concept of the algorithm using simple graph structures:
 * **Decomposition:** Identifies standard genomic "bubbles" as **P-nodes** (Parallel components) in the SPQR tree.
 * **Diploid Construction:** Validates the linear expansion formula for SP graphs: $V_{diploid} = V_{input} + 2|P|$.
 
-### 2. [02_NonSP_Complex_Validation.ipynb](02_NonSP_Complex_Validation.ipynb)
+### 2. [02_NonSP_Complex_Validation.ipynb]
 **Handling Non-Series-Parallel (Non-SP) Complex Variation.**
 This notebook covers the advanced contributions of the paper regarding complex topology:
 * **W-Motif Identification:** Demonstrates the detection of **W-nodes**, extracted from **R-nodes** in standard SPQR trees, and upgrades them to **W-nodes** using the complexity graph $C(G)$ method.

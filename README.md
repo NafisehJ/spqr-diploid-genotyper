@@ -47,7 +47,8 @@ We validated the algorithm on large, randomized complex graphs containing both s
 
 
 ## 🛠️ Dependencies
-* **Python 3.x**
-* **SageMath**: Required for the underlying graph theory primitives and Triconnectivity/SPQR decomposition algorithms.
+- Python 3.x
+- SageMath (SPQR-tree decomposition)
+- libbdsg (vg’s graph backend; used to load GFA files)
 
 

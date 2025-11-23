@@ -28,22 +28,6 @@ This notebook includes:
 
 
 
-
-## 🚀 Key Results
-
-We validated the algorithm on large, randomized complex graphs containing both simple bubbles and complex bridges.
-
-* ⚡ **Efficiency:** The diploid graph construction demonstrated linear scalability across all topologies.
-
-  * On complex graphs mixing linear backbone, bubbles, and bridges, we observed an expansion factor of **~1.6x**.
-
-  * On graphs consisting entirely of nested structural variations (pure SP "bubbles"), the expansion factor approached **~1.9x**.
-
-    * **Comparison:** This linear scaling drastically outperforms standard theoretical models, **avoiding** both the quadratic growth ($O(N^2)$) of Cartesian products and the combinatorial explosion ($\binom{n}{2}$) of naive haplotype path pairing.
-
-* ✅ **Accuracy:** The node and edge counts of the resulting graphs **matched theoretical topological predictions** derived from the SPQRW decomposition, verifying that the algorithm identifies disjoint paths **without introducing redundancy**.
-
-
 ## 🛠️ Dependencies
 - Python 3.x
 - SageMath (SPQR-tree decomposition)

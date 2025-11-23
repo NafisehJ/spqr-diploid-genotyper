@@ -6,29 +6,27 @@
 
 ## 📂 Repository Contents
 
-This repository contains the reference implementation using **SageMath** and **Jupyter notebooks** reproducing the validation experiments described in the paper.
-
 ### 1. [01_SP_Bubble_Validation.ipynb](01_SP_Bubble_Validation.ipynb)
+Validation on **Series–Parallel (SP)** graphs.
 
-**Validation on Series-Parallel (SP) Graphs.**
+This notebook demonstrates:
+- Construction of SP input examples 
+- Identification of P-nodes in the SPQR decomposition
+- Enumeration of disjoint path pairs at each P-node
+- Diploid graph expansion driven by P-node structures
 
-This notebook demonstrates the core concept of the algorithm using simple graph structures:
-
-* **Decomposition:** Identifies standard genomic "bubbles" as **P-nodes** (Parallel components) in the SPQR tree.
-* 
-* **Diploid Construction:** Validates the linear expansion of the diploid graph size relative to the input haploid graph.
-
+---
 
 ### 2. [02_NonSP_Complex_Validation.ipynb](02_NonSP_Complex_Validation.ipynb)
+Validation on **Non-Series–Parallel (Non-SP)** graphs.
 
-**Handling Non-Series-Parallel (Non-SP) Complex Variation.**
-This notebook covers the advanced contributions of the paper regarding complex topology:
+This notebook includes:
+- Construction of input graphs containing non-SP structures
+- Identification of R-nodes and extraction of W-motifs using the complexity graph \(C(G)\)
+- Enumeration of disjoint path pairs at W-nodes
+- Diploid graph expansion driven by both P-node and W-node structures
 
-* **W-Motif Identification:** Demonstrates the detection of **W-nodes**, extracted from **R-nodes** in standard SPQR trees, and upgrades them to **W-nodes** using the complexity graph $C(G)$ method.
-* 
-* **Disjoint Path Extraction:** Visualizes the extraction of "crossing" path pairs (diplotypes) through complex snarls.
-* 
-* **Scalability Stress-Test:** Generates large synthetic chromosomes with mixed P and W structures (30+ segments) to confirm the algorithm maintains efficient linear scaling even with complex structural variations.
+
 
 
 ## 🚀 Key Results
